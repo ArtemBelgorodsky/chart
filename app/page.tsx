@@ -55,16 +55,16 @@ export default function Home() {
 
 
 
-  function set1 () {
+  function set1 (event: any) {
     
-    setItem1(items[event?.target.value])
-    setItem3(items2[event?.target.value])
+    setItem1(items[event.target.value])
+    setItem3(items2[event.target.value])
   
   }
-  function set2 () {
+  function set2 (event: any) {
     
-    setItem2(items[event?.target.value])
-    setItem4(items2[event?.target.value])
+    setItem2(items[event.target.value])
+    setItem4(items2[event.target.value])
   }
 
   let labels: string[] = _.keys(arr1[0]);
