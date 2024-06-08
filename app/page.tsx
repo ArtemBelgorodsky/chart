@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { Bar } from 'react-chartjs-2';
 import {CategoryScale} from 'chart.js';
 import Chart from 'chart.js/auto';
@@ -10,7 +10,7 @@ import _ from "underscore";
 Chart.register(CategoryScale);
 
 
-export const options = {
+const options = {
   indexAxis: 'y' as const,
   elements: {
     bar: {
