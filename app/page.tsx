@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Bar } from 'react-chartjs-2';import {CategoryScale} from 'chart.js';
+import { Bar } from 'react-chartjs-2';
+import {CategoryScale} from 'chart.js';
 import Chart from 'chart.js/auto';
 import {items} from "./data";
 import {items2} from "./data";
@@ -23,7 +24,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Гравик сравнения характеристик облачных серверов',
+      text: 'График сравнения характеристик облачных серверов',
     },
   },
 };
@@ -104,9 +105,6 @@ export default function Home() {
       },
     ],
   };
-
-  console.log(items2[0])
-
  
   return (<>
   <h4 className='title'>Выберите компании для сравнения</h4>
